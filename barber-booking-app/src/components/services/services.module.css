@@ -1,0 +1,15 @@
+.serviceBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.imageBox {
+  background-color: white;
+  width: 200px;
+}
+
+.image {
+  width: 200px;
+}
