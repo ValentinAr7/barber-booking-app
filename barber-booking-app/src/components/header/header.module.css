@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  background-color: var(--primary-color);
+  border-radius: 0 0 40px 40px;
+}
+
+.icon {
+  color: var(--text-color) !important;
+}
