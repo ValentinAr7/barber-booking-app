@@ -7,7 +7,6 @@ const Header = () => {
   return (
     <div className={styles.container}>
       <h2>Faded Barbers</h2>
-
       <IconButton className={styles.icon}>
         <MenuIcon />
       </IconButton>
