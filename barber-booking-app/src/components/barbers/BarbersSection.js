@@ -4,7 +4,7 @@ import Barbers from "./Barbers";
 
 const BarbersSection = () => {
   return (
-    <div>
+    <div className={styles.barberBox}>
       {barbersData.map((barber) => (
         <Barbers
           key={barber.id}

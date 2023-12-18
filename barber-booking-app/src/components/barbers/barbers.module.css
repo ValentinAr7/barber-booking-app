@@ -1,0 +1,35 @@
+.dataBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  margin: 15px 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  padding: 10px;
+}
+
+.image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.textData {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 70%;
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 4px;
+  }
+
+  & > p {
+    margin: 2px;
+  }
+}
