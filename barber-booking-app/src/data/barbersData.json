@@ -1,6 +1,7 @@
 [
     {
       "id": 1,
+      "image": "/Images/barbers.jpg",
       "name": "Людмил Леков",
       "location": "гр. София, кв. Младост 4",
       "priceRange": "15лв - 30лв",
@@ -8,6 +9,7 @@
     },
     {
       "id": 2,
+      "image": "/Images/barbers.jpg",
       "name": "Петьо Станев",
       "location": "гр. София, кв. Люлин 5",
       "priceRange": "15лв - 30лв",
@@ -15,6 +17,7 @@
     },
     {
       "id": 3,
+      "image": "/Images/barbers.jpg",
       "name": "Валентин Арнаутски",
       "location": "гр. София, кв. Надежда 2",
       "priceRange": "15лв - 30лв",

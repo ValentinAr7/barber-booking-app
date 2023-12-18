@@ -1,6 +1,6 @@
 import "./App.css";
+import BarbersSection from "./components/barbers/BarbersSection";
 import Header from "./components/header/Header";
-import Services from "./components/services/Services";
 import ServicesSection from "./components/services/ServicesSection";
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <Header />
       <ServicesSection />
+      <BarbersSection />
     </div>
   );
 }
