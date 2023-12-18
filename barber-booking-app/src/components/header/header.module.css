@@ -11,3 +11,7 @@
 .icon {
   color: var(--text-color) !important;
 }
+
+.header {
+  color: var(--text-color);
+}

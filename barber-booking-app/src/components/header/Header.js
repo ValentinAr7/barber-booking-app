@@ -6,7 +6,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 const Header = () => {
   return (
     <div className={styles.container}>
-      <h2>Faded Barbers</h2>
+      <h2 className={styles.header}>Faded Barbers</h2>
       <IconButton className={styles.icon}>
         <MenuIcon />
       </IconButton>

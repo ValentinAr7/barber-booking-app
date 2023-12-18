@@ -6,11 +6,14 @@ import styles from "./services.module.css";
 
 const ServicesSection = () => {
   return (
-    <div className={styles.serviceBox}>
-      {servicesData.map((service, index) => (
-        <Services key={index} title={service.title} image={service.image} />
-      ))}
-    </div>
+    <>
+      <h2>Available Services</h2>
+      <div className={styles.serviceBox}>
+        {servicesData.map((service, index) => (
+          <Services key={index} title={service.title} image={service.image} />
+        ))}
+      </div>
+    </>
   );
 };
 
