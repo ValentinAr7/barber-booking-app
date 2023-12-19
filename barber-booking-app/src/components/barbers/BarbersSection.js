@@ -1,6 +1,8 @@
 import styles from "./barbers.module.css";
 import barbersData from "../../data/barbersData.json";
 import Barbers from "./Barbers";
+import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 
 const BarbersSection = () => {
   return (
@@ -19,6 +21,9 @@ const BarbersSection = () => {
           />
         ))}
       </div>
+      <Link to="/bookings">
+        <Button variant="contained">Make an appoinment</Button>
+      </Link>
     </>
   );
 };

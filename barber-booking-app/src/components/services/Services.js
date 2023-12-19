@@ -4,7 +4,7 @@ const Services = ({ image, title }) => {
   return (
     <div className={styles.imageBox}>
       <img className={styles.image} src={image} alt={title} />
-      <h3>{title}</h3>
+      <h4 className={styles.title}>{title}</h4>
     </div>
   );
 };
