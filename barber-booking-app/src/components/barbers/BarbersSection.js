@@ -4,18 +4,22 @@ import Barbers from "./Barbers";
 
 const BarbersSection = () => {
   return (
-    <div className={styles.barberBox}>
-      {barbersData.map((barber) => (
-        <Barbers
-          key={barber.id}
-          image={barber.image}
-          name={barber.name}
-          location={barber.location}
-          priceRange={barber.priceRange}
-          phone={barber.phone}
-        />
-      ))}
-    </div>
+    <>
+      <h3>Available Barbers</h3>
+
+      <div className={styles.barberBox}>
+        {barbersData.map((barber) => (
+          <Barbers
+            key={barber.id}
+            image={barber.image}
+            name={barber.name}
+            location={barber.location}
+            priceRange={barber.priceRange}
+            phone={barber.phone}
+          />
+        ))}
+      </div>
+    </>
   );
 };
 

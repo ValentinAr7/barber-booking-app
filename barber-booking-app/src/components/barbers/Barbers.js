@@ -7,12 +7,12 @@ const Barbers = ({ image, name, location, priceRange, phone }) => {
       <img className={styles.image} src={image} alt={name} />
 
       <div className={styles.textData}>
-        <h3>{name}</h3>
+        <h4>{name}</h4>
         <p>{location}</p>
         <p>{priceRange}</p>
         <p>{phone}</p>
       </div>
-      <Button>Book</Button>
+      <Button variant="outlined">Book</Button>
     </div>
   );
 };

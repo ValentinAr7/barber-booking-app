@@ -7,7 +7,7 @@ import styles from "./services.module.css";
 const ServicesSection = () => {
   return (
     <>
-      <h2>Available Services</h2>
+      <h3>Available Services</h3>
       <div className={styles.serviceBox}>
         {servicesData.map((service, index) => (
           <Services key={index} title={service.title} image={service.image} />
