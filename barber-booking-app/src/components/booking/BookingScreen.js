@@ -5,11 +5,14 @@ import styles from "./booking.module.css";
 
 const BookingScreen = () => {
   return (
-    <div className={styles.calendar}>
-      <LocalizationProvider dateAdapter={AdapterDayjs}>
-        <StaticDatePicker orientation="StaticDatePicker" />
-      </LocalizationProvider>{" "}
-    </div>
+    <>
+      <h3>Book a date</h3>
+      <div className={styles.calendar}>
+        <LocalizationProvider dateAdapter={AdapterDayjs}>
+          <StaticDatePicker orientation="StaticDatePicker" />
+        </LocalizationProvider>{" "}
+      </div>
+    </>
   );
 };
 

@@ -6,12 +6,13 @@ import BarbersSection from "./components/barbers/BarbersSection";
 import Header from "./components/header/Header";
 import ServicesSection from "./components/services/ServicesSection";
 import BookingScreen from "./components/booking/BookingScreen";
+import TimeSlots from "./components/booking/TimeSlots";
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Header /> 
+        <Header />
         <Routes>
           <Route
             path="/"
@@ -22,7 +23,15 @@ function App() {
               </>
             }
           />
-          <Route path="/bookings/*" element={<BookingScreen />} />
+          <Route
+            path="/bookings/*"
+            element={
+              <>
+                <BookingScreen />
+                <TimeSlots />
+              </>
+            }
+          />
         </Routes>
       </div>
     </Router>
