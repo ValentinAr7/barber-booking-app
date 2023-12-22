@@ -7,9 +7,9 @@ const BookingScreen = () => {
   return (
     <>
       <h3>Book a date</h3>
-      <div className={styles.calendar}>
+      <div className={styles.calendarContainer}>
         <LocalizationProvider dateAdapter={AdapterDayjs}>
-          <StaticDatePicker orientation="StaticDatePicker" />
+          <StaticDatePicker className={styles.calendar} orientation="StaticDatePicker" />
         </LocalizationProvider>{" "}
       </div>
     </>
