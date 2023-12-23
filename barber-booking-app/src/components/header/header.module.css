@@ -15,3 +15,9 @@
 .header {
   color: var(--text-color);
 }
+
+.arrow {
+  position: absolute !important;
+  left: 10px;
+  color: var(--text-color) !important;
+}
