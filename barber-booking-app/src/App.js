@@ -7,6 +7,7 @@ import Header from "./components/header/Header";
 import ServicesSection from "./components/services/ServicesSection";
 import BookingScreen from "./components/booking/BookingScreen";
 import TimeSlots from "./components/booking/TimeSlots";
+import BarberSelection from "./components/booking/BarberSelection";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             path="/bookings/*"
             element={
               <>
+                <BarberSelection />
                 <BookingScreen />
                 <TimeSlots />
               </>

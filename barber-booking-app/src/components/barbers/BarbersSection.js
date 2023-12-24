@@ -9,7 +9,7 @@ const BarbersSection = () => {
     <>
       <h3>Available Barbers</h3>
 
-      <div className={styles.barberBox}>
+      <div>
         {barbersData.map((barber) => (
           <Barbers
             key={barber.id}
