@@ -1,11 +1,11 @@
-import BarberSelection from "./BarberSelection";
+import BarbersSection from "../barbers/BarbersSection";
 import Calendar from "./Calendar";
 import TimeSlots from "./TimeSlots";
 
 const BookingScreen = () => {
   return (
     <>
-      <BarberSelection />
+      <BarbersSection />
       <Calendar />
       <TimeSlots />
     </>

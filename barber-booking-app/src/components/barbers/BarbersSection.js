@@ -3,8 +3,12 @@ import barbersData from "../../data/barbersData.json";
 import Barbers from "./Barbers";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const BarbersSection = () => {
+  const selectedBarber = useSelector((state) => state.barber.selectedBarber);
+
+  console.log(selectedBarber);
   return (
     <>
       <h3>Available Barbers</h3>

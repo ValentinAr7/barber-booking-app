@@ -14,7 +14,6 @@ const Calendar = () => {
         <LocalizationProvider dateAdapter={AdapterDayjs}>
           <StaticDatePicker
             className={styles.calendar}
-            orientation="StaticDatePicker"
             minDate={minDate}
             value={minDate}
           />
