@@ -11,18 +11,19 @@ const BarbersSection = () => {
 
       <div>
         {barbersData.map((barber) => (
-          <Barbers
-            key={barber.id}
-            image={barber.image}
-            name={barber.name}
-            location={barber.location}
-            priceRange={barber.priceRange}
-            phone={barber.phone}
-          />
+          <div key={barber.id} className={styles.barberContainer}>
+            <Barbers
+              image={barber.image}
+              name={barber.name}
+              location={barber.location}
+              priceRange={barber.priceRange}
+              phone={barber.phone}
+            />
+          </div>
         ))}
       </div>
       <Link to="/bookings">
-        <Button variant="contained">Make an appoinment</Button>
+        <Button variant="contained">Make an appointment</Button>
       </Link>
     </>
   );
