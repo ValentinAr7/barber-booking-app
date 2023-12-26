@@ -1,7 +1,15 @@
+// TimeSlots.js
 import styles from "./booking.module.css";
+import { useSelector, useDispatch } from "react-redux";
+import {
+  selectSlot,
+  selectSelectedSlots,
+} from "../../store/barbers/slotsSlice";
 import { useState } from "react";
 
 const TimeSlots = () => {
+  const dispatch = useDispatch();
+  const selectedSlots = useSelector(selectSelectedSlots) || []; // Use default value if undefined
   const [selectedSlot, setSelectedSlot] = useState(null);
 
   let startDate = new Date();
@@ -21,7 +29,11 @@ const TimeSlots = () => {
   }
 
   const handleSelectedSlot = (index) => {
-    setSelectedSlot(index);
+    if (!selectedSlots.includes(index)) {
+      dispatch(selectSlot(index));
+      setSelectedSlot(index);
+      console.log(`Selected time slot: ${timeSlots[index]}`);
+    }
   };
 
   return (
@@ -32,7 +44,7 @@ const TimeSlots = () => {
           <div
             key={index}
             className={`${styles.slots} ${
-              selectedSlot === index ? styles.selectedSlot : ""
+              selectedSlots.includes(index) ? styles.selectedSlot : ""
             }`}
             onClick={() => handleSelectedSlot(index)}
           >
