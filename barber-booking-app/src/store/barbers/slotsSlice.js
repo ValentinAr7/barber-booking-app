@@ -10,7 +10,7 @@ export const slotsSlice = createSlice({
   initialState,
   reducers: {
     selectSlot: (state, action) => {
-      state.selectedSlots.push(action.payload);
+      state.selectedSlots = [action.payload];
     },
   },
 });

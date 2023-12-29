@@ -9,8 +9,8 @@ import { useState } from "react";
 
 const TimeSlots = () => {
   const dispatch = useDispatch();
-  const selectedSlots = useSelector(selectSelectedSlots) || []; // Use default value if undefined
-  const [selectedSlot, setSelectedSlot] = useState(null);
+  const selectedSlots = useSelector(selectSelectedSlots) || [];
+  const [selectedSlot, setSelectedSlot] = useState(0);
 
   let startDate = new Date();
   startDate.setHours(9, 0, 0);
@@ -30,7 +30,9 @@ const TimeSlots = () => {
 
   const handleSelectedSlot = (index) => {
     if (!selectedSlots.includes(index)) {
-      dispatch(selectSlot(index));
+      if (selectedSlot !== null) {
+        dispatch(selectSlot(index));
+      }
       setSelectedSlot(index);
       console.log(`Selected time slot: ${timeSlots[index]}`);
     }
@@ -44,7 +46,7 @@ const TimeSlots = () => {
           <div
             key={index}
             className={`${styles.slots} ${
-              selectedSlots.includes(index) ? styles.selectedSlot : ""
+              selectedSlots.includes(index) ? styles.selectedSlot : styles.slots
             }`}
             onClick={() => handleSelectedSlot(index)}
           >
