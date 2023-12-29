@@ -26,9 +26,6 @@ const BarbersSection = () => {
           </div>
         ))}
       </div>
-      <Link to="/bookings">
-        <Button variant="contained">Make an appointment</Button>
-      </Link>
     </>
   );
 };

@@ -4,6 +4,7 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 0;
 }
 
 .imageBox {
@@ -17,8 +18,11 @@
 
 .image {
   width: 120px;
+  margin: 10px;
 }
 
 .title {
   font-size: 1.2rem;
+  margin: 0;
+  padding-bottom: 20px;
 }
