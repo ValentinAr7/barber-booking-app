@@ -29,10 +29,10 @@
 
 .bannerContainer {
   display: flex;
+  position: relative;
   flex-direction: row;
   justify-content: space-between;
   text-align: justify;
-  background-color: white;
   border-radius: 10px;
   margin: 10px;
   padding: 15px;
@@ -41,11 +41,24 @@
 }
 
 .leftSection {
-  width: 60%;
+  width: 65%;
   margin-top: 5px;
 }
 
+.rightSection {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
 h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
+  color: var(--primary-color);
   margin: 0;
+}
+
+.img {
+  position: absolute;
+  width: 200px;
+  right: 0;
 }

@@ -17,8 +17,8 @@ function App() {
             path="/"
             element={
               <>
-                <ServicesSection />
                 <Banner />
+                <ServicesSection />
               </>
             }
           />
