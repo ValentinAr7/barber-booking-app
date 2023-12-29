@@ -26,3 +26,26 @@
   margin: 0;
   padding-bottom: 20px;
 }
+
+.bannerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: justify;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.leftSection {
+  width: 60%;
+  margin-top: 5px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0;
+}
